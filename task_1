@@ -1,0 +1,17 @@
+
+    def file_handling():
+        try:
+            file_1 = open('hello.txt','w')
+            writing = file_1.write('Reading the content\n line1:this is a sample text file\n line2:it contain multiple lines')
+            file_1.close()
+
+            file_1 = open('hello.txt','r')
+            reading = file_1.read()
+            print(reading)
+            file_1.close()
+
+        except FileNotFoundError:
+            print("error: this file 'sample text' was not found")
+
+
+    file_handling()

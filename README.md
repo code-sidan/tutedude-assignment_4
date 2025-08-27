@@ -4,17 +4,17 @@ Module 5: Files, Exceptions, and Errors in Python
 
 Problem Statement:
     Write a Python program that:
-      Opens and reads a text file named sample.txt.
-      Prints its content line by line.
-      Handles errors gracefully if the file does not exist.
+      1.Opens and reads a text file named sample.txt.
+      2.Prints its content line by line.
+      3.Handles errors gracefully if the file does not exist.
     How the Program Works
       The program first creates a file called sample.txt and writes some sample text into it.
       Then, it reopens the file in read mode and prints the content line by line.
       If the file does not exist, it shows an error message instead of crashing.
     Features Implemented
-      File Writing: Adds some sample text into sample.txt.
-      File Reading: Reads the file line by line using a loop.
-      Error Handling: Uses try-except to handle FileNotFoundError.
+      -File Writing: Adds some sample text into sample.txt.
+      -File Reading: Reads the file line by line using a loop.
+      -Error Handling: Uses try-except to handle FileNotFoundError.
 
 Expected Output
 If the file exists:

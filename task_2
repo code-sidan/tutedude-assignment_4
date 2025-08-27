@@ -1,0 +1,17 @@
+def file_user():
+
+    with open('output.txt', 'w') as file_2:
+        text = input("Enter the text to write in the file: ")
+        file_2.write(text)
+    print("Data successfully written to output.txt\n")
+
+    with open('output.txt', 'a') as file_2:
+        extra_text = input("Enter additional text to append: ")
+        file_2.write("\n" + extra_text)
+    print("Data successfully appended\n")
+
+    with open('output.txt', 'r') as file_2:
+        reading = file_2.read()
+    print(f"Final content for output.txt:\n{reading}")
+
+file_user()

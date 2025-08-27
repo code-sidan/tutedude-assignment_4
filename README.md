@@ -1,51 +1,44 @@
-Assignment 4 – Task 1
-Module 5: Files, Exceptions, and Errors in Python
-✅ Task 1: Read a File and Handle Errors
+# Python File Handling - Assignment 4
+This repository contains solutions for Module 5: Files, Exceptions, and Errors in Python.  
+It includes two tasks:
+1. Read a file and handle errors  
+2. Write and append data to a file
 
-Problem Statement:
-    Write a Python program that:
-      1.Opens and reads a text file named sample.txt.
-      2.Prints its content line by line.
-      3.Handles errors gracefully if the file does not exist.
-    How the Program Works
-      The program first creates a file called sample.txt and writes some sample text into it.
-      Then, it reopens the file in read mode and prints the content line by line.
-      If the file does not exist, it shows an error message instead of crashing.
-    Features Implemented
-      -File Writing: Adds some sample text into sample.txt.
-      -File Reading: Reads the file line by line using a loop.
-      -Error Handling: Uses try-except to handle FileNotFoundError.
+Task 1: Read a File and Handle Errors
 
-Expected Output
+Problem Statement
+- Open and read a text file named `sample.txt`.
+- Print its content line by line.
+- Handle errors gracefully if the file does not exist.
+
+Features
+- Uses `try-except` for error handling.
+- Displays content line by line.
+- Shows a proper error message if the file is missing.
+
+Example Output
 If the file exists:
-          Reading the file
-            line1: this is a sample text file
-            line2: it contains multiple lines
-            
+    line 1: This is a sample text file
+    line 2: It contains multiple lines
+    
 If the file does not exist:
-          Error: The file 'sample.txt' was not found.
-
-
-
-Python File Handling - Task 2
-
-
-📌 Features
-  - Takes user input and writes it to a file.
-  - Appends more data without overwriting the previous content.
-  - Displays the final file content after all operations.
-  - Uses proper file handling methods (`with open()`).
-  - Ensures data is preserved even after multiple operations.
-
-📜 How It Works
-  1. Prompts the user to **enter some text** to write to `output.txt`.
-  2. Saves the text in **write mode (`w`)**.
-  3. Prompts the user for **additional text** and appends it in **append mode (`a`)**.
-  4. Reads and prints the **final content of the file**.
+    Error: The file 'sample.txt' was not found.
 
 ---
+Task 2: Write and Append Data to a Fill
 
-## ✅ Example Output
+Problem Statement
+- Take user input and **write it to `output.txt`.
+- Append additional data to the same file.
+- Read and display the **final content** of the file.
+
+ Features
+- First input is written using write mode (`w`).
+- Additional text is appended using append mode (`a`).
+- Displays the complete file content after all operations.
+
+Example Output
+
 Enter the text to write in the file: hello
 Data successfully written to output.txt
 
@@ -55,3 +48,4 @@ Data successfully appended
 Final content for output.txt:
 hello
 world
+
